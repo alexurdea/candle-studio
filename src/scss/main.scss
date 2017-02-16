@@ -1,0 +1,110 @@
+$col1: rebeccapurple;
+$stage-main-height: 450px;
+$padding-general: 15px;
+
+$small-font: 10px;
+
+#title {
+  font-size: 15px;
+}
+
+#stage {
+  width: 100%;
+  min-height: $stage-main-height;
+  border: 1px $col1 solid;
+}
+
+.candle-body {
+  cursor: move;
+}
+
+.candle-lane {
+  fill: rgba($col1, 0);
+}
+
+.candle-axis {
+  display: none;
+}
+
+.handle {
+  fill: rgba($col1, 0);
+  cursor: ns-resize;
+}
+
+.candle-group:hover {
+  .candle-lane {
+    fill: rgba($col1, 0.05);
+  }
+
+  .candle-axis {
+    display: block;
+  }
+
+  .handle {
+    fill: rgba($col1, 0.3);
+  }
+
+  .candle-remove-bg,
+  .candle-remove-icon,
+  .candle-add-right-bg,
+  .candle-add-right-icon {
+    display: block;
+  }
+}
+
+.chart-toolbar {
+  min-height: $stage-main-height;
+  @extend .top-padded-main;
+
+  .glyphicon {
+    cursor: pointer;
+  }
+}
+
+.top-padded-main {
+  padding-top: 20px;
+}
+
+.stage-container {
+  @extend .top-padded-main;
+}
+
+.small-font {
+  font-size: $small-font;
+}
+
+#chart-tooltip {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding-right: 2*$padding-general;
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+}
+
+.session-section {
+  position: absolute;
+  bottom: -$padding-general;
+  right: 0;
+  padding-right: $padding-general;
+}
+
+.candle-remove,
+.candle-add-right {
+  cursor: pointer;
+}
+
+.candle-remove-bg,
+.candle-add-right-bg {
+  fill: rgba(229, 228, 230, 0.91);
+  display: none;
+}
+
+.candle-remove-icon,
+.candle-add-right-icon {
+  fill: rgba($col1, 0.5);
+  display: none;
+}

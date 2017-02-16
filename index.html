@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Candle Chart Scenario Generator</title>
+
+  <!-- Compiled and minified Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Bootstrap theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="dist/bundle.css">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a id="title" class="navbar-brand" href="#"></a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1 chart-toolbar">
+        <div class="text-right">
+          <span class="small-font">Add candles</span><br>
+          <span class="glyphicon glyphicon-plus add-candles" title="add"></span><br><br>
+        </div>
+        
+        <div class="text-right">
+          <span class="small-font">Data files</span><br>
+<style>
+  #file-upload {
+    width: 0.1px;
+    height: 0.1px; 
+    opacity: 0; 
+    overflow: hidden;
+    position: absolute;
+    z-index: -1; 
+  }
+</style>
+          <input type="file" id="file-upload" type="file" name="file-upload" />
+          <label for="file-upload"><span class="glyphicon glyphicon-open" title="From file"></span></label>
+          <span id="file-download" class="glyphicon glyphicon-save" title="Download to file"></span><br><br>
+        </div>
+        
+        <div class="text-right session-section">
+          <span class="small-font">Storage</span><br>
+          <span class="glyphicon glyphicon-floppy-disk storage-save" title="Save (to local storage)"></span>
+          <span class="glyphicon glyphicon-repeat storage-reload" title="Reload session"></span>
+          <span class="glyphicon glyphicon-remove storage-clear" title="Clear and restore default"></span><br>
+        </div>
+      </div>
+      <div class="col-md-11 stage-container">
+        <div id="chart-tooltip" class="text-right small-font">
+          <span class="pull-left">Candle #<span class="candle-num">10</span></span>
+
+          <span class="pull-right">Open: <span class="open-val">15.22</span> &nbsp;&nbsp; Close: <span class="close-val">13.23</span> &nbsp;&nbsp; Low: <span class="low-val">10.33</span> &nbsp;&nbsp; High: <span class="high-val">19.22</span> </span>
+        </div>
+        <svg id="stage"></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script src="lib/d3.js"></script> -->
+  <script src="dist/bundle.js"></script>
+</body>
+</html>
