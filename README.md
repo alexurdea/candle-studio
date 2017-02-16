@@ -1,5 +1,7 @@
 Candle Studio
 =============
+Deployed here: [http://vibesphere.com/candle-studio/](http://vibesphere.com/candle-studio/)
+
 A simple tool for modifying OHLC time series. Import csv files that have the following columns: "Open", "High", "Low", "Close". The names don't really matter, just the order. It works well ok on up to 100 rows. So you must work on intervals of your time series.
 
 Modify the scenario and export the file. Edits can be saved to browser local storage.
