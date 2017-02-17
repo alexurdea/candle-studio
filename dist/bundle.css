@@ -1,0 +1,75 @@
+#title {
+  font-size: 15px; }
+
+#stage {
+  width: 100%;
+  min-height: 450px;
+  border: 1px rebeccapurple solid; }
+
+.candle-body {
+  cursor: move; }
+
+.candle-lane {
+  fill: rgba(102, 51, 153, 0); }
+
+.candle-axis {
+  display: none; }
+
+.handle {
+  fill: rgba(102, 51, 153, 0);
+  cursor: ns-resize; }
+
+.candle-group:hover .candle-lane {
+  fill: rgba(102, 51, 153, 0.05); }
+
+.candle-group:hover .candle-axis {
+  display: block; }
+
+.candle-group:hover .handle {
+  fill: rgba(102, 51, 153, 0.3); }
+
+.candle-group:hover .candle-remove-bg,
+.candle-group:hover .candle-remove-icon,
+.candle-group:hover .candle-add-right-bg,
+.candle-group:hover .candle-add-right-icon {
+  display: block; }
+
+.chart-toolbar {
+  min-height: 450px; }
+  .chart-toolbar .glyphicon {
+    cursor: pointer; }
+
+.top-padded-main, .chart-toolbar, .stage-container {
+  padding-top: 20px; }
+
+.small-font {
+  font-size: 10px; }
+
+#chart-tooltip {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding-right: 30px;
+  display: none; }
+  #chart-tooltip.visible {
+    display: block; }
+
+.session-section {
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  padding-right: 15px; }
+
+.candle-remove,
+.candle-add-right {
+  cursor: pointer; }
+
+.candle-remove-bg,
+.candle-add-right-bg {
+  fill: rgba(229, 228, 230, 0.91);
+  display: none; }
+
+.candle-remove-icon,
+.candle-add-right-icon {
+  fill: rgba(102, 51, 153, 0.5);
+  display: none; }
