@@ -31,6 +31,7 @@ CSV Format:
 - Click "Add candles" to get 5 copies of the last candle.
 
 Video example:
+
 [![Youtube video how to](http://img.youtube.com/vi/De0OgXp6Ud4/0.jpg)](http://www.youtube.com/watch?v=De0OgXp6Ud4)
 
 
